@@ -1,225 +1,124 @@
-# Solana Trading Bot 🚀
+# 🚀 Solana Meme Coin Trading Bot
 
-## Project Overview
-High-frequency trading bot designed for token launches on Solana. The bot implements advanced trading strategies with comprehensive risk management.
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-## Core Features
+An advanced trading bot for Solana-based meme coins, focusing on automated trading strategies, risk management, and high-performance execution.
 
-### 1. Trading Strategy Implementation
-- Dynamic entry distribution
-- Configurable profit-taking levels
-- Advanced risk management system
-- Multiple RPC fallback system
+## Features
 
-### 2. Technical Architecture
+### Core Components
+- ✅ Raydium DEX Integration
+- ✅ Multi-RPC Fallback System
+- ✅ Wallet Management
+- ✅ Transaction Retry Logic
+- ✅ Price Impact Analysis
+- ✅ Liquidity Monitoring
 
-#### Platform Integration
-- WebSocket connection to DEX
-- Real-time price feed monitoring
-- Automated order execution system
-- Multiple RPC endpoint management
-- Web3 wallet integration
+### Trading Strategies
+- ✅ Entry Strategy Implementation
+- ✅ Launch Sniping
+- ✅ Scalping Strategy
+- ✅ Position Management
 
-#### Monitoring Systems
-- Real-time price tracking
-- Volume analysis
-- Liquidity monitoring
-- Gas price optimization
-- Network congestion tracking
+### Risk Management
+- ✅ Price Impact Checks
+- ✅ Liquidity Analysis
+- ✅ Transaction Failure Handling
+- ✅ Network Congestion Management
+- ✅ Multiple RPC Fallbacks
 
-#### Alert System
-- Telegram integration for notifications
-- Critical event alerts
-- Position updates
-- Error reporting
-- Performance metrics
+## Installation
+
+```bash
+git clone https://github.com/yourusername/meme-coin-trading.git
+cd meme-coin-trading
+pip install -r requirements.txt
+```
+
+## Configuration
+
+1. Create a `.env` file in the root directory:
+
+```env
+RPC_ENDPOINTS=["https://your-rpc-endpoint-1", "https://your-rpc-endpoint-2"]
+WALLET_PRIVATE_KEY=your_private_key
+```
+
+2. Configure trading parameters in `src/config/settings.py`
+
+## Usage
+
+```python
+from src.core.dex import dex_manager
+from src.strategies.entry_strategy import EntryStrategy
+
+# Initialize strategy
+strategy = EntryStrategy()
+
+# Execute trades
+await strategy.execute_entry(amount=1.0, tranche_index=0, max_slippage=0.02)
+```
+
+## Testing
+
+The project includes comprehensive test coverage:
+
+```bash
+pytest # Run all tests
+pytest -v # Verbose mode
+pytest --cov=src # Coverage report
+```
 
 ## Project Structure
+
 ```
 meme-coin-trading/
-├── Dockerfile                  # Container configuration
-├── README.md                   # Project documentation
-├── deploy.yml                  # Deployment configuration
-├── docker-compose.yml         # Docker services setup
-├── main.py                    # Application entry point
-├── requirements.txt           # Python dependencies
-├── scripts/
-│   └── build_and_test.py     # Build automation script
 ├── src/
-│   ├── config/               # Configuration management
-│   │   ├── __init__.py
-│   │   └── settings.py       # Global settings
-│   ├── core/                 # Core trading functionality
-│   │   ├── __init__.py
-│   │   ├── dex.py           # DEX interaction
-│   │   ├── trading.py       # Trading operations
-│   │   └── wallet.py        # Wallet management
-│   ├── monitoring/          # System monitoring
-│   │   ├── __init__.py
-│   │   ├── alerts.py        # Alert system
-│   │   └── price_feed.py    # Price tracking
-│   ├── strategies/          # Trading strategies
-│   │   ├── __init__.py
+│   ├── core/
+│   │   ├── dex.py     # DEX integration
+│   │   └── wallet.py  # Wallet management
+│   ├── strategies/
 │   │   ├── entry_strategy.py
 │   │   ├── launch_sniper.py
 │   │   └── scalping.py
-│   └── utils/               # Helper functions
-│       ├── __init__.py
-│       ├── helpers.py       # Utility functions
-│       ├── logger.py        # Logging system
-│       └── telegram_notifications.py
-└── tests/                   # Test suite
-    ├── __init__.py
-    ├── test_monitoring.py
-    ├── test_strategies.py
-    └── test_trading.py
+│   └── utils/
+│       └── logger.py
+├── tests/
+│   ├── test_dex.py
+│   ├── test_strategies.py
+│   └── test_trading.py
+└── README.md
 ```
 
-## Technical Requirements
+## Development Status
 
-### Environment Setup
-```bash
-# Required environment variables - see .env.example
-RPC_URL=<rpc-endpoint>
-TELEGRAM_BOT_TOKEN=<telegram-bot-token>
-TELEGRAM_CHAT_ID=<telegram-chat-id>
-# Additional environment variables defined in .env.example
-```
+### Completed
+- ✅ DEX Integration (Raydium)
+- ✅ Wallet Integration
+- ✅ Basic Trading Strategies
+- ✅ Test Framework
+- ✅ Error Handling
+- ✅ Logging System
 
-### Dependencies
-- Python 3.9+
-- Solana Web3.py
-- FastAPI
-- WebSocket clients
-- Async functionality
-- Telegram API
-
-### Installation
-
-```bash
-# Clone repository
-git clone <repository-url>
-cd trading-bot
-
-# Set up virtual environment
-python -m venv venv
-source venv/bin/activate  # Unix
-.\venv\Scripts\activate  # Windows
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your configuration
-```
-
-### Docker Deployment
-```bash
-# Build and run with Docker
-docker-compose up --build
-```
-
-## Implementation Status
-
-### 1. Core Infrastructure
-- [x] Project structure setup
-- [ ] Configuration management
-- [ ] Environment variable handling
-- [ ] Logging system
-- [ ] Error handling framework
-
-### 2. Trading Engine
-- [ ] Wallet integration
-- [ ] Order execution system
-- [ ] Position management
-- [ ] Risk management implementation
-
-### 3. Market Integration
-- [ ] Price feed connection
-- [ ] Volume monitoring
-- [ ] Liquidity analysis
-- [ ] Gas optimization
-
-### 4. Strategy Implementation
-- [ ] Entry point detection
-- [ ] Position management
-- [ ] Take profit execution
-- [ ] Stop loss management
-
-### 5. Monitoring and Alerts
-- [ ] Real-time price tracking
-- [ ] Volume analysis
-- [ ] Telegram notifications
-- [ ] Performance metrics
-
-## Development Guidelines
-
-### Code Structure
-- Use async/await for all network operations
-- Implement comprehensive error handling
-- Maintain detailed logging
-- Include type hints
-- Document all functions and classes
-- Follow modular design patterns
-
-### Risk Management
-- Multiple RPC fallbacks
-- Transaction failure handling
-- Network congestion management
-- Position size limits
-- Maximum loss thresholds
-
-### Testing Standards
-- Unit tests for all components
-- Integration testing
-- Strategy backtesting
-- Error scenario testing
-- Performance benchmarking
-
-## Performance Targets
-- High-performance order execution
-- Low latency price updates
-- High system uptime
-- Optimized slippage handling
-- Reliable execution of safety measures
-
-## Security Measures
-- Secure key management
-- RPC endpoint security
-- API protection
-- Rate limiting
-- Robust error handling
-- Secure transaction signing
-- Network security
-
-## Monitoring and Maintenance
-- Real-time performance monitoring
-- Automated error alerting
-- Transaction logging
-- Position tracking
-- Performance analytics
-- System health checks
-
-## Future Enhancements
-1. Additional trading strategies
-2. Enhanced risk management
-3. Machine learning integration
-4. Advanced analytics dashboard
-5. Portfolio management tools
-6. Multi-token support
+### In Progress
+- 🔄 Advanced Strategy Implementation
+- 🔄 Performance Optimization
+- 🔄 Additional DEX Support
+- 🔄 UI/Dashboard Development
 
 ## Contributing
-Please refer to [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines and code of conduct information.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
-This project is licensed under the MIT License - see [LICENSE.md](LICENSE.md) for details.
 
-## Support
-For support and inquiries:
-1. Open an issue in the repository
-2. Contact the development team through project channels
-3. Review existing documentation and FAQs
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Disclaimer
-This software is for educational purposes only. Cryptocurrency trading involves substantial risk and may not be suitable for everyone. Past performance is not indicative of future results.
+
+This software is for educational purposes only. Use at your own risk. The developers are not responsible for any financial losses incurred while using this software.
