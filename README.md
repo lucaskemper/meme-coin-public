@@ -1,13 +1,14 @@
-# 🚀 SOLANA Meme Coin Trading Bot (alpha)
+# 🚀 Solana & Etherum Meme Coin Trading Bot (alpha)
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-An advanced trading bot for solana-based meme coins, focusing on automated trading strategies, risk management, and high-performance execution.
+An advanced trading bot for Solana& Etherum-based meme coins, focusing on automated trading strategies, risk management, and high-performance execution.
 
-⚠️ **IMPORTANT LEGAL DISCLAIMER**
+## ⚠️ Important Legal Disclaimer
 
 This software is provided strictly for EDUCATIONAL AND RESEARCH PURPOSES ONLY. Users must:
+
 - Comply with all applicable laws and regulations in their jurisdiction
 - Obtain necessary licenses and registrations before any actual trading
 - Understand that cryptocurrency trading involves substantial risk of loss
@@ -16,6 +17,7 @@ This software is provided strictly for EDUCATIONAL AND RESEARCH PURPOSES ONLY. U
 ## Features
 
 ### Core Components
+
 - ✅ Uniswap DEX Integration
 - ✅ Multi-RPC Fallback System
 - ✅ Wallet Management
@@ -26,6 +28,7 @@ This software is provided strictly for EDUCATIONAL AND RESEARCH PURPOSES ONLY. U
 - ✅ Performance Monitoring
 
 ### Trading Strategies
+
 - ✅ Entry Strategy Implementation
 - ✅ Launch Sniping
 - ✅ Scalping Strategy
@@ -33,6 +36,7 @@ This software is provided strictly for EDUCATIONAL AND RESEARCH PURPOSES ONLY. U
 - ✅ Trend Trading
 
 ### Risk Management
+
 - ✅ Price Impact Checks
 - ✅ Liquidity Analysis
 - ✅ Transaction Failure Handling
@@ -43,6 +47,7 @@ This software is provided strictly for EDUCATIONAL AND RESEARCH PURPOSES ONLY. U
 ## Regulatory Compliance Notice
 
 Before using this software, ensure compliance with:
+
 1. Securities regulations in your jurisdiction
 2. Cryptocurrency trading regulations
 3. Anti-money laundering (AML) requirements
@@ -166,23 +171,29 @@ meme-coin-trading/
 ## Core Components
 
 ### TradingBot Class
+
 The `TradingBot` class in `main.py` is the core component of the bot. It handles the main trading logic, including setup, execution, and monitoring of trades. The bot uses various strategies and risk management techniques to ensure optimal performance.
 
 ### TelegramNotifier Class
+
 The `TelegramNotifier` class in `prod/scripts/handlers/telegram_handler.py` is responsible for sending notifications to a Telegram channel. It provides real-time updates on the bot's status, trades, and other important events.
 
 ### RiskManager Class
+
 The `RiskManager` class in `prod/scripts/risk_manager.py` is responsible for managing the risk associated with trades. It ensures that the bot adheres to predefined risk parameters and prevents excessive losses.
 
 ### PriceTracker Class
+
 The `PriceTracker` class in `prod/scripts/price_tracker.py` is responsible for tracking the prices of various tokens. It provides real-time price data to the bot, enabling it to make informed trading decisions.
 
 ### NotificationSystem Class
+
 The `NotificationSystem` class in `prod/scripts/notifications.py` is responsible for managing notifications. It ensures that the bot sends timely and relevant notifications to the user, keeping them informed about the bot's activities.
 
 ## Development Status
 
 ### Completed
+
 - ✅ DEX Integration (Uniswap)
 - ✅ Wallet Integration
 - ✅ Basic Trading Strategies
@@ -191,6 +202,7 @@ The `NotificationSystem` class in `prod/scripts/notifications.py` is responsible
 - ✅ Logging System
 
 ### In Progress
+
 - 🔄 Advanced Strategy Implementation
 - 🔄 Performance Optimization
 - 🔄 Additional DEX Support
@@ -207,6 +219,7 @@ The `NotificationSystem` class in `prod/scripts/notifications.py` is responsible
 ## Risk Disclosure
 
 Trading cryptocurrency involves substantial risk of loss and is not suitable for all investors. Users should:
+
 - Never trade with funds they cannot afford to lose
 - Understand all risks involved in cryptocurrency trading
 - Be aware of the high volatility in cryptocurrency markets
@@ -218,50 +231,64 @@ Trading cryptocurrency involves substantial risk of loss and is not suitable for
 
 PROPRIETARY SOFTWARE
 Copyright © 2025 Lucas Kemper and Adrien Clement. All Rights Reserved.
+
 This advanced trading bot for Ethereum-based meme coins is proprietary software focusing on automated trading strategies, risk management, and high-performance execution.
-⚠️ IMPORTANT: PROPRIETARY SOFTWARE NOTICE
+
+### ⚠️ Important: Proprietary Software Notice
+
 This software and its documentation are proprietary and confidential property of Lucas Kemper and Adrien Clement. Any unauthorized use, reproduction, or distribution is strictly prohibited and may result in severe civil and criminal penalties.
-[Previous Features section remains the same...]
-License and Legal Notice
-Proprietary Software License Agreement
+
+### License and Legal Notice
+
+#### Proprietary Software License Agreement
+
 This software is protected by copyright laws and international treaties. Access to and use of this software is subject to the following terms:
-Ownership
 
-All rights, title, and interest in the software remain with Lucas Kemper and Adrien Clement
-All intellectual property rights are reserved
-No transfer of ownership is granted or implied
+#### Ownership
 
-Usage Restrictions
+- All rights, title, and interest in the software remain with Lucas Kemper and Adrien Clement
+- All intellectual property rights are reserved
+- No transfer of ownership is granted or implied
+
+#### Usage Restrictions
+
 You may not:
 
-Copy, distribute, or modify any part of this software
-Reverse engineer, decompile, or disassemble the software
-Remove any copyright or other proprietary notices
-Transfer the software to any third party
-Use the software to create derivative works
+- Copy, distribute, or modify any part of this software
+- Reverse engineer, decompile, or disassemble the software
+- Remove any copyright or other proprietary notices
+- Transfer the software to any third party
+- Use the software to create derivative works
 
-Termination
+#### Termination
 
-License is effective until terminated
-Rights automatically terminate if any terms are violated
-All software and documentation must be destroyed upon termination
+- License is effective until terminated
+- Rights automatically terminate if any terms are violated
+- All software and documentation must be destroyed upon termination
 
-Legal Compliance
+#### Legal Compliance
+
 Users must:
 
-Comply with all applicable laws and regulations
-Maintain confidentiality of the software
-Report any unauthorized use or disclosure
-Obtain necessary licenses and registrations for trading activities
+- Comply with all applicable laws and regulations
+- Maintain confidentiality of the software
+- Report any unauthorized use or disclosure
+- Obtain necessary licenses and registrations for trading activities
 
-No Warranty
+#### No Warranty
+
 THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. LUCAS KEMPER AND ADRIEN CLEMENT EXPRESSLY DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
-Limitation of Liability
+
+#### Limitation of Liability
+
 IN NO EVENT SHALL LUCAS KEMPER AND ADRIEN CLEMENT BE LIABLE FOR ANY DAMAGES (INCLUDING, WITHOUT LIMITATION, LOST PROFITS, BUSINESS INTERRUPTION, OR LOST INFORMATION) ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE.
-Governing Law
+
+#### Governing Law
+
 This License shall be governed by and construed in accordance with the laws of France, without giving effect to any principles of conflicts of law.
 
 Users must:
+
 - Conduct their own due diligence
 - Comply with all applicable laws and regulations
 - Obtain necessary licenses and registrations
@@ -269,7 +296,6 @@ Users must:
 - Report all required tax obligations
 - Implement appropriate security measures
 - Not use this software for any illegal activities
-
 
 ---
 
