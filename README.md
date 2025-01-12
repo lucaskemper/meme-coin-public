@@ -3,7 +3,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-An advanced trading bot for Ethereum-based meme coins, focusing on automated trading strategies, risk management, and high-performance execution.
+An advanced trading bot for solana-based meme coins, focusing on automated trading strategies, risk management, and high-performance execution.
 
 ⚠️ **IMPORTANT LEGAL DISCLAIMER**
 
