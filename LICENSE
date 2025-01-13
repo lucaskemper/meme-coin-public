@@ -1,21 +1,33 @@
-MIT License
+PROPRIETARY SOFTWARE LICENSE AGREEMENT
 
-Copyright (c) 2024 Lucas Kemper
+Copyright © 2025 Lucas Kemper and Adrien Clement. All Rights Reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This software and its documentation are proprietary and confidential property of Lucas Kemper and Adrien Clement. No part of this software, including all intellectual property rights, source code, designs, and documentation, may be reproduced, transmitted, transcribed, stored in a retrieval system, or translated into any language or computer language, in any form or by any means, without the express written permission of Lucas Kemper and Adrien Clement.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+OWNERSHIP AND LICENSE
+All title, ownership rights, and intellectual property rights in and to the Software shall remain with Lucas Kemper and Adrien Clement. This Software is protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+RESTRICTIONS
+You may not:
+1. Copy, distribute, or modify any part of this software
+2. Reverse engineer, decompile, or disassemble the software
+3. Remove any copyright or other proprietary notices from the software
+4. Transfer the software to any third party
+5. Use the software to create derivative works
+
+TERMINATION
+This license is effective until terminated. Your rights under this License will terminate automatically without notice if you fail to comply with any term(s) of this License.
+
+NO WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. LUCAS KEMPER AND ADRIEN CLEMENT EXPRESSLY DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+LIMITATION OF LIABILITY
+IN NO EVENT SHALL LUCAS KEMPER AND ADRIEN CLEMENT BE LIABLE FOR ANY DAMAGES (INCLUDING, WITHOUT LIMITATION, LOST PROFITS, BUSINESS INTERRUPTION, OR LOST INFORMATION) ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE.
+
+GOVERNING LAW
+This License shall be governed by and construed in accordance with the laws of France, without giving effect to any principles of conflicts of law.
+
+For any questions regarding this license, please contact:
+Lucas Kemper and Adrien Clement
+
+All Rights Reserved.
