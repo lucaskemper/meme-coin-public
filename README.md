@@ -58,7 +58,7 @@ Before using this software, ensure compliance with:
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/meme-coin-trading.git
+git clone https://github.com/lucaskemper/meme-coin-public.git
 cd meme-coin-trading
 pip install -r requirements.txt
 ```
@@ -67,7 +67,7 @@ pip install -r requirements.txt
 
 ```bash
 # Clone repository
-git clone <repository-url>
+git clone https://github.com/lucaskemper/meme-coin-public.git
 cd trading-bot
 
 # Set up virtual environment
@@ -90,6 +90,8 @@ cp .env.example .env
 ```env
 RPC_ENDPOINTS=["https://your-rpc-endpoint-1", "https://your-rpc-endpoint-2"]
 WALLET_PRIVATE_KEY=your_private_key
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token
+TELEGRAM_CHAT_ID=your_telegram_chat_id
 ```
 
 2. Configure trading parameters in `src/config/settings.py`
